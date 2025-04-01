@@ -18,7 +18,7 @@ https://github.com/Stas-91/terr_itog
 ---
 
 ### Описание работы
-Веб приложение работает из контейнера (yandex_compute_instance.vm_with_coi). Контейнер с приложение, после сборки образа (docker_image.app_image), загружается в реестр (yandex_container_registry.my_registry).  
+Веб приложение работает из контейнера (yandex_compute_instance.vm_with_coi). Контейнер с приложением, после сборки образа (docker_image.app_image), загружается в реестр (yandex_container_registry.my_registry).  
 Приложение подключаетя с использование SSL к БД (module "mysql_cluster", module "mysql_db_user"). Для этого был частично переписан код приложения из Задания 5 «Виртуализация и контейнеризация», чтобы можно было подключаться с использованием SSL.  
 Приложение является целевой группой для баллансировщика нагрузки (yandex_alb_load_balancer.load_balancer).  
 Пароль от БД хранится в LockBox (yandex_lockbox_secret.my_password_secret).  
