@@ -1,0 +1,19 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_ssl
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: test
+      MYSQL_USER: app
+      MYSQL_PASSWORD: Qwerty123
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./certs:/etc/mysql/certs
+    command: >
+      --require_secure_transport=ON
+      --ssl-ca=/etc/mysql/certs/ca.pem
+      --ssl-cert=/etc/mysql/certs/server-cert.pem
+      --ssl-key=/etc/mysql/certs/server-key.pem
+    ports:
+      - "3306:3306"
