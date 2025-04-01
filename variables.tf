@@ -98,7 +98,7 @@ variable "mysql_config" {
     ha             = false
     database_name  = "test"
     username       = "app"
-    password       = "Qwerty123"
+    password       = ""
     user_roles     = ["ALL"]
   }
 }

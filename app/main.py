@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Получение переменных окружения
 db_host = os.environ.get('DB_HOST', 'rc1a-hv3mv3crugmb6m9e.mdb.yandexcloud.net')
 db_user = os.environ.get('DB_USER', 'app')
-db_password = os.environ.get('DB_PASSWORD', 'Qwerty123')
+db_password = os.environ.get('DB_PASSWORD')
 db_database = os.environ.get('DB_NAME', 'test')
 
 # Подключение к базе данных MySQL
