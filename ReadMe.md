@@ -34,9 +34,10 @@ https://github.com/Stas-91/terr_itog/blob/master/terraform_project.md
 
 ![terr](img/16-7-1.jpg)
 ![terr](img/16-7-2.jpg)
+![terr](img/16-7-5.jpg)
 ![terr](img/16-7-3.jpg)
 ![terr](img/16-7-4.jpg)
-![terr](img/16-7-5.jpg)
+
 
 
 
